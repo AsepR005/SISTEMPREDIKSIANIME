@@ -1,0 +1,4918 @@
+/*==================================================
+
+ANIMATION.CSS
+
+PART 1
+
+GLOBAL KEYFRAMES
+
+==================================================*/
+
+
+/*==================================================
+
+BUBBLE FLOAT
+
+==================================================*/
+
+@keyframes BubbleFloat{
+
+    0%{
+
+        transform:translateY(120vh) translateX(0) scale(.5);
+
+        opacity:0;
+
+    }
+
+    10%{
+
+        opacity:.35;
+
+    }
+
+    25%{
+
+        transform:translateY(70vh) translateX(-12px) scale(.7);
+
+    }
+
+    50%{
+
+        transform:translateY(25vh) translateX(14px) scale(1);
+
+        opacity:.75;
+
+    }
+
+    75%{
+
+        transform:translateY(-20vh) translateX(-10px) scale(1.15);
+
+    }
+
+    100%{
+
+        transform:translateY(-140vh) translateX(20px) scale(1.35);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/*==================================================
+
+GLOW MOVE
+
+==================================================*/
+
+@keyframes GlowMove{
+
+    0%{
+
+        transform:translate(0,0) scale(1);
+
+    }
+
+    25%{
+
+        transform:translate(25px,-20px) scale(1.08);
+
+    }
+
+    50%{
+
+        transform:translate(-18px,18px) scale(.95);
+
+    }
+
+    75%{
+
+        transform:translate(20px,12px) scale(1.05);
+
+    }
+
+    100%{
+
+        transform:translate(0,0) scale(1);
+
+    }
+
+}
+
+
+/*==================================================
+
+LIGHT MOVE
+
+==================================================*/
+
+@keyframes LightMove{
+
+    0%{
+
+        transform:translateX(-35px);
+
+        opacity:.25;
+
+    }
+
+    50%{
+
+        transform:translateX(35px);
+
+        opacity:.65;
+
+    }
+
+    100%{
+
+        transform:translateX(-35px);
+
+        opacity:.25;
+
+    }
+
+}
+
+
+/*==================================================
+
+FLOATING CARD
+
+==================================================*/
+
+@keyframes FloatingCard{
+
+    0%{
+
+        transform:translateY(0) rotate(0deg);
+
+    }
+
+    25%{
+
+        transform:translateY(-8px) rotate(.3deg);
+
+    }
+
+    50%{
+
+        transform:translateY(-16px) rotate(0deg);
+
+    }
+
+    75%{
+
+        transform:translateY(-8px) rotate(-.3deg);
+
+    }
+
+    100%{
+
+        transform:translateY(0) rotate(0deg);
+
+    }
+
+}
+
+
+/*==================================================
+
+HERO FADE
+
+==================================================*/
+
+@keyframes HeroFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==================================================
+
+FADE UP
+
+==================================================*/
+
+@keyframes FadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==================================================
+
+FADE LEFT
+
+==================================================*/
+
+@keyframes FadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+
+/*==================================================
+
+FADE RIGHT
+
+==================================================*/
+
+@keyframes FadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+
+/*==================================================
+
+SCALE IN
+
+==================================================*/
+
+@keyframes ScaleIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.82);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/*==================================================
+
+ROTATE SLOW
+
+==================================================*/
+
+@keyframes RotateSlow{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/*==================================================
+
+PULSE
+
+==================================================*/
+
+@keyframes Pulse{
+
+    0%{
+
+        transform:scale(1);
+
+        box-shadow:0 0 0 rgba(89,223,255,.35);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+        box-shadow:0 0 35px rgba(89,223,255,.45);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        box-shadow:0 0 0 rgba(89,223,255,.35);
+
+    }
+
+}
+
+
+/*==================================================
+
+RIPPLE
+
+==================================================*/
+
+@keyframes Ripple{
+
+    0%{
+
+        transform:scale(.2);
+
+        opacity:.8;
+
+    }
+
+    100%{
+
+        transform:scale(2.4);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/*==================================================
+
+WATER WAVE
+
+==================================================*/
+
+@keyframes WaterWave{
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+    50%{
+
+        transform:translateX(-40px);
+
+    }
+
+    100%{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+
+/*==================================================
+
+GRADIENT SHIFT
+
+==================================================*/
+
+@keyframes GradientShift{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+
+/*==================================================
+
+SHIMMER
+
+==================================================*/
+
+@keyframes Shimmer{
+
+    0%{
+
+        transform:translateX(-120%);
+
+    }
+
+    100%{
+
+        transform:translateX(120%);
+
+    }
+
+}
+
+
+/*==================================================
+
+FLOAT ICON
+
+==================================================*/
+
+@keyframes FloatIcon{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==================================================
+
+SOFT ZOOM
+
+==================================================*/
+
+@keyframes SoftZoom{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.04);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*==================================================
+
+ANIMATION.CSS
+
+PART 2
+
+OCEAN ANIMATION
+
+==================================================*/
+
+
+/*==================================================
+
+OCEAN BACKGROUND
+
+==================================================*/
+
+.ocean-background{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:-10;
+
+}
+
+
+.ocean-gradient{
+
+    position:absolute;
+
+    inset:-15%;
+
+    background:linear-gradient(
+        135deg,
+        #031B35 0%,
+        #0B4FA4 30%,
+        #5BDFFF 70%,
+        #D9F8FF 100%
+    );
+
+    background-size:400% 400%;
+
+    animation:GradientShift 20s ease infinite;
+
+}
+
+
+
+/*==================================================
+
+UNDERWATER LIGHT
+
+==================================================*/
+
+.ocean-light{
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+
+        circle,
+
+        rgba(255,255,255,.18),
+
+        rgba(91,223,255,.08),
+
+        transparent 75%
+
+    );
+
+    filter:blur(80px);
+
+    animation:GlowMove 18s ease-in-out infinite;
+
+}
+
+
+.ocean-light.one{
+
+    top:-250px;
+
+    left:-120px;
+
+}
+
+
+.ocean-light.two{
+
+    bottom:-280px;
+
+    right:-180px;
+
+    animation-delay:5s;
+
+}
+
+
+
+/*==================================================
+
+SUN RAYS
+
+==================================================*/
+
+.sun-rays{
+
+    position:absolute;
+
+    top:-150px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:1400px;
+
+    height:700px;
+
+    pointer-events:none;
+
+    opacity:.22;
+
+}
+
+
+.sun-rays::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:repeating-linear-gradient(
+
+        95deg,
+
+        rgba(255,255,255,.14) 0px,
+
+        rgba(255,255,255,.05) 18px,
+
+        transparent 40px,
+
+        transparent 120px
+
+    );
+
+    filter:blur(14px);
+
+    animation:LightMove 18s ease-in-out infinite;
+
+}
+
+
+
+/*==================================================
+
+CAUSTICS
+
+==================================================*/
+
+.caustics{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:.12;
+
+    mix-blend-mode:screen;
+
+    background:
+
+    radial-gradient(circle at 20% 30%,rgba(255,255,255,.35),transparent 18%),
+
+    radial-gradient(circle at 75% 20%,rgba(255,255,255,.25),transparent 16%),
+
+    radial-gradient(circle at 40% 70%,rgba(255,255,255,.28),transparent 20%),
+
+    radial-gradient(circle at 85% 80%,rgba(255,255,255,.22),transparent 18%);
+
+    background-size:600px 600px;
+
+    animation:GradientShift 24s linear infinite;
+
+}
+
+
+
+/*==================================================
+
+WATER BLUR
+
+==================================================*/
+
+.water-blur{
+
+    position:absolute;
+
+    inset:0;
+
+    backdrop-filter:blur(2px);
+
+    opacity:.35;
+
+}
+
+
+
+/*==================================================
+
+FLOATING GLOW
+
+==================================================*/
+
+.floating-glow{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(70px);
+
+    animation:GlowMove 16s ease-in-out infinite;
+
+}
+
+
+.floating-glow.one{
+
+    width:260px;
+
+    height:260px;
+
+    left:8%;
+
+    top:20%;
+
+    background:rgba(91,223,255,.18);
+
+}
+
+
+.floating-glow.two{
+
+    width:340px;
+
+    height:340px;
+
+    right:6%;
+
+    bottom:12%;
+
+    background:rgba(255,255,255,.10);
+
+    animation-delay:3s;
+
+}
+
+
+.floating-glow.three{
+
+    width:180px;
+
+    height:180px;
+
+    left:50%;
+
+    bottom:5%;
+
+    background:rgba(91,223,255,.14);
+
+    animation-delay:8s;
+
+}
+
+
+
+/*==================================================
+
+OCEAN VIGNETTE
+
+==================================================*/
+
+.ocean-vignette{
+
+    position:absolute;
+
+    inset:0;
+
+    background:radial-gradient(
+
+        circle,
+
+        transparent 40%,
+
+        rgba(0,0,0,.18) 100%
+
+    );
+
+    pointer-events:none;
+
+}
+
+
+
+/*==================================================
+
+WATER OVERLAY
+
+==================================================*/
+
+.water-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        180deg,
+
+        rgba(255,255,255,.06),
+
+        transparent 18%,
+
+        transparent 70%,
+
+        rgba(0,0,0,.12)
+
+    );
+
+    pointer-events:none;
+
+}
+
+
+
+/*==================================================
+
+OCEAN SHIMMER
+
+==================================================*/
+
+.ocean-shimmer{
+
+    position:absolute;
+
+    top:0;
+
+    left:-40%;
+
+    width:40%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.08),
+
+        transparent
+
+    );
+
+    transform:skewX(-18deg);
+
+    animation:Shimmer 16s linear infinite;
+
+}
+
+
+
+/*==================================================
+
+PERFORMANCE
+
+==================================================*/
+
+@media (prefers-reduced-motion: reduce){
+
+.ocean-gradient,
+
+.ocean-light,
+
+.sun-rays::before,
+
+.caustics,
+
+.floating-glow,
+
+.ocean-shimmer{
+
+animation:none !important;
+
+}
+
+}
+
+/*==================================================
+
+ANIMATION.CSS
+
+PART 3
+
+BUBBLE SYSTEM
+
+==================================================*/
+
+
+/*==================================================
+
+BUBBLE CONTAINER
+
+==================================================*/
+
+.bubble-container{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+
+/*==================================================
+
+DEFAULT BUBBLE
+
+==================================================*/
+
+.bubble{
+
+    position:absolute;
+
+    bottom:-180px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+
+        circle at 30% 30%,
+
+        rgba(255,255,255,.85),
+
+        rgba(180,240,255,.35) 35%,
+
+        rgba(91,223,255,.12) 70%,
+
+        rgba(91,223,255,.04) 100%
+
+    );
+
+    border:1px solid rgba(255,255,255,.18);
+
+    backdrop-filter:blur(6px);
+
+    box-shadow:
+
+        inset 0 0 18px rgba(255,255,255,.22),
+
+        0 0 16px rgba(91,223,255,.14);
+
+    animation:BubbleFloat linear infinite;
+
+}
+
+
+/*==================================================
+
+INNER HIGHLIGHT
+
+==================================================*/
+
+.bubble::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:28%;
+
+    height:28%;
+
+    top:16%;
+
+    left:20%;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.9);
+
+    filter:blur(2px);
+
+}
+
+
+/*==================================================
+
+SECOND HIGHLIGHT
+
+==================================================*/
+
+.bubble::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:12%;
+
+    height:12%;
+
+    bottom:26%;
+
+    right:22%;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.55);
+
+}
+
+
+/*==================================================
+
+SIZE
+
+==================================================*/
+
+.bubble-xs{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+.bubble-sm{
+
+    width:32px;
+
+    height:32px;
+
+}
+
+.bubble-md{
+
+    width:54px;
+
+    height:54px;
+
+}
+
+.bubble-lg{
+
+    width:82px;
+
+    height:82px;
+
+}
+
+.bubble-xl{
+
+    width:120px;
+
+    height:120px;
+
+}
+
+
+
+/*==================================================
+
+DEPTH
+
+==================================================*/
+
+.depth-1{
+
+    opacity:.18;
+
+    filter:blur(5px);
+
+}
+
+.depth-2{
+
+    opacity:.30;
+
+}
+
+.depth-3{
+
+    opacity:.48;
+
+}
+
+.depth-4{
+
+    opacity:.70;
+
+}
+
+
+
+/*==================================================
+
+SPEED
+
+==================================================*/
+
+.speed-slow{
+
+    animation-duration:24s;
+
+}
+
+.speed-normal{
+
+    animation-duration:18s;
+
+}
+
+.speed-fast{
+
+    animation-duration:13s;
+
+}
+
+.speed-ultra{
+
+    animation-duration:10s;
+
+}
+
+
+
+/*==================================================
+
+SWAY
+
+==================================================*/
+
+.bubble-left{
+
+    animation-timing-function:ease-in-out;
+
+}
+
+.bubble-right{
+
+    animation-timing-function:ease-in-out;
+
+}
+
+
+
+/*==================================================
+
+GLOW BUBBLE
+
+==================================================*/
+
+.bubble-glow{
+
+    box-shadow:
+
+        0 0 22px rgba(91,223,255,.28),
+
+        0 0 42px rgba(91,223,255,.18),
+
+        inset 0 0 18px rgba(255,255,255,.20);
+
+}
+
+
+
+/*==================================================
+
+NEON BUBBLE
+
+==================================================*/
+
+.bubble-neon{
+
+    border-color:rgba(91,223,255,.40);
+
+    box-shadow:
+
+        0 0 12px rgba(91,223,255,.35),
+
+        0 0 40px rgba(91,223,255,.25),
+
+        inset 0 0 16px rgba(255,255,255,.25);
+
+}
+
+
+
+/*==================================================
+
+FLOAT SHADOW
+
+==================================================*/
+
+.bubble-shadow{
+
+    filter:
+
+        drop-shadow(0 0 14px rgba(91,223,255,.20));
+
+}
+
+
+
+/*==================================================
+
+HOVER IGNORE
+
+==================================================*/
+
+.bubble{
+
+    user-select:none;
+
+    pointer-events:none;
+
+}
+
+
+
+/*==================================================
+
+MOBILE OPTIMIZATION
+
+==================================================*/
+
+@media(max-width:768px){
+
+.bubble-lg,
+
+.bubble-xl{
+
+display:none;
+
+}
+
+.bubble{
+
+opacity:.45;
+
+}
+
+}
+
+/*==================================================
+
+ANIMATION.CSS
+
+PART 4
+
+HERO ANIMATION
+
+==================================================*/
+
+
+/*==================================================
+
+HERO CONTENT
+
+==================================================*/
+
+.hero-left{
+
+    animation:FadeLeft 1s ease forwards;
+
+}
+
+
+.hero-right{
+
+    animation:FadeRight 1s ease forwards;
+
+}
+
+
+/*==================================================
+
+HERO IMAGE
+
+==================================================*/
+
+.hero-image{
+
+    position:relative;
+
+    animation:
+
+        FloatingCard 8s ease-in-out infinite,
+
+        HeroFade 1.2s ease;
+
+    transition:all .45s ease;
+
+    transform-origin:center;
+
+}
+
+
+.hero-image:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+
+/*==================================================
+
+IMAGE SHINE
+
+==================================================*/
+
+.hero-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-25%;
+
+    left:-65%;
+
+    width:45%;
+
+    height:160%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.35),
+
+        transparent
+
+    );
+
+    transform:rotate(20deg);
+
+    animation:Shimmer 6s linear infinite;
+
+    pointer-events:none;
+
+}
+
+
+
+/*==================================================
+
+IMAGE GLOW
+
+==================================================*/
+
+.hero-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-20px;
+
+    border-radius:32px;
+
+    background:radial-gradient(
+
+        circle,
+
+        rgba(91,223,255,.18),
+
+        transparent 70%
+
+    );
+
+    filter:blur(30px);
+
+    z-index:-1;
+
+    animation:Pulse 5s ease infinite;
+
+}
+
+
+
+/*==================================================
+
+BADGE
+
+==================================================*/
+
+.hero-badge{
+
+    animation:
+
+        FloatIcon 4s ease-in-out infinite,
+
+        FadeUp .8s ease;
+
+}
+
+
+.hero-badge:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+/*==================================================
+
+HERO TITLE
+
+==================================================*/
+
+.hero-title{
+
+    animation:FadeUp .9s ease;
+
+}
+
+
+
+/*==================================================
+
+HERO DESCRIPTION
+
+==================================================*/
+
+.hero-description{
+
+    animation:FadeUp 1.1s ease;
+
+}
+
+
+
+/*==================================================
+
+PRIMARY BUTTON
+
+==================================================*/
+
+.hero-btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+    animation:FadeUp 1.25s ease;
+
+}
+
+
+.hero-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+.hero-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.30),
+
+        transparent
+
+    );
+
+    animation:Shimmer 3.5s linear infinite;
+
+}
+
+
+
+/*==================================================
+
+SECONDARY BUTTON
+
+==================================================*/
+
+.hero-btn-secondary{
+
+    animation:FadeUp 1.35s ease;
+
+}
+
+
+.hero-btn-secondary:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+
+/*==================================================
+
+FLOATING CARD
+
+==================================================*/
+
+.hero-card{
+
+    animation:
+
+        FloatingCard 9s ease-in-out infinite,
+
+        ScaleIn .9s ease;
+
+}
+
+
+
+/*==================================================
+
+STATS CARD
+
+==================================================*/
+
+.hero-stat{
+
+    animation:
+
+        FloatingCard 10s ease-in-out infinite;
+
+}
+
+
+.hero-stat:nth-child(2){
+
+    animation-delay:2s;
+
+}
+
+
+.hero-stat:nth-child(3){
+
+    animation-delay:4s;
+
+}
+
+
+
+/*==================================================
+
+DECORATIVE CIRCLE
+
+==================================================*/
+
+.hero-circle{
+
+    animation:
+
+        RotateSlow 45s linear infinite;
+
+}
+
+
+
+/*==================================================
+
+HERO GLOW
+
+==================================================*/
+
+.hero-glow{
+
+    animation:
+
+        GlowMove 12s ease-in-out infinite;
+
+}
+
+
+
+/*==================================================
+
+FLOATING ICONS
+
+==================================================*/
+
+.hero-icon{
+
+    animation:
+
+        FloatIcon 5s ease-in-out infinite;
+
+}
+
+
+.hero-icon:nth-child(2){
+
+    animation-delay:1s;
+
+}
+
+
+.hero-icon:nth-child(3){
+
+    animation-delay:2s;
+
+}
+
+
+.hero-icon:nth-child(4){
+
+    animation-delay:3s;
+
+}
+
+
+
+/*==================================================
+
+POSTER PARALLAX READY
+
+==================================================*/
+
+.hero-poster{
+
+    transition:
+
+        transform .25s ease,
+
+        box-shadow .35s ease;
+
+}
+
+
+.hero-poster:hover{
+
+    box-shadow:
+
+        0 25px 60px rgba(91,223,255,.30);
+
+}
+
+
+
+/*==================================================
+
+HERO SHADOW
+
+==================================================*/
+
+.hero-shadow{
+
+    animation:
+
+        SoftZoom 8s ease-in-out infinite;
+
+}
+
+
+
+/*==================================================
+
+RESPONSIVE
+
+==================================================*/
+
+@media(max-width:992px){
+
+.hero-image{
+
+animation:none;
+
+}
+
+.hero-card{
+
+animation:none;
+
+}
+
+.hero-circle{
+
+animation:none;
+
+}
+
+.hero-glow{
+
+animation:none;
+
+}
+
+}
+
+
+@media(prefers-reduced-motion:reduce){
+
+.hero-left,
+
+.hero-right,
+
+.hero-image,
+
+.hero-card,
+
+.hero-stat,
+
+.hero-circle,
+
+.hero-btn,
+
+.hero-btn-secondary,
+
+.hero-glow,
+
+.hero-icon{
+
+animation:none !important;
+
+}
+
+}
+
+/*==================================================
+
+ANIMATION.CSS
+
+PART 5
+
+GLASS EFFECT
+
+==================================================*/
+
+
+/*==================================================
+
+GLASS CARD
+
+==================================================*/
+
+.glass{
+
+    position:relative;
+
+    overflow:hidden;
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+}
+
+
+
+/*==================================================
+
+GLASS SHINE
+
+==================================================*/
+
+.glass::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-160%;
+
+    left:-40%;
+
+    width:55%;
+
+    height:420%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.18),
+
+        rgba(255,255,255,.45),
+
+        rgba(255,255,255,.18),
+
+        transparent
+
+    );
+
+    transform:rotate(24deg);
+
+    animation:GlassShine 8s linear infinite;
+
+    pointer-events:none;
+
+}
+
+
+
+/*==================================================
+
+INNER REFLECTION
+
+==================================================*/
+
+.glass::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:inherit;
+
+    background:linear-gradient(
+
+        180deg,
+
+        rgba(255,255,255,.18),
+
+        rgba(255,255,255,.05),
+
+        transparent
+
+    );
+
+    opacity:.55;
+
+    pointer-events:none;
+
+}
+
+
+
+/*==================================================
+
+GLASS HOVER
+
+==================================================*/
+
+.glass:hover{
+
+    transform:translateY(-6px);
+
+    transition:.35s ease;
+
+}
+
+
+
+/*==================================================
+
+NEON BORDER
+
+==================================================*/
+
+.glass-border{
+
+    position:relative;
+
+}
+
+
+
+.glass-border::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-1px;
+
+    border-radius:inherit;
+
+    padding:1px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(91,223,255,.55),
+
+        rgba(255,255,255,.10),
+
+        rgba(91,223,255,.45)
+
+    );
+
+    -webkit-mask:
+
+        linear-gradient(#fff 0 0) content-box,
+
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+    animation:BorderGlow 6s linear infinite;
+
+    pointer-events:none;
+
+}
+
+
+
+/*==================================================
+
+SOFT REFLECTION
+
+==================================================*/
+
+.glass-reflection{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        120deg,
+
+        rgba(255,255,255,.16),
+
+        transparent 35%,
+
+        transparent 70%,
+
+        rgba(255,255,255,.08)
+
+    );
+
+    opacity:.35;
+
+    pointer-events:none;
+
+}
+
+
+
+/*==================================================
+
+BOTTOM LIGHT
+
+==================================================*/
+
+.glass-light{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-80px;
+
+    transform:translateX(-50%);
+
+    width:240px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:rgba(91,223,255,.18);
+
+    filter:blur(45px);
+
+    animation:Pulse 7s ease infinite;
+
+}
+
+
+
+/*==================================================
+
+GLASS SHADOW
+
+==================================================*/
+
+.glass-shadow{
+
+    box-shadow:
+
+        0 10px 40px rgba(0,0,0,.22),
+
+        0 0 40px rgba(91,223,255,.08),
+
+        inset 0 1px 0 rgba(255,255,255,.12);
+
+}
+
+
+
+/*==================================================
+
+EDGE HIGHLIGHT
+
+==================================================*/
+
+.glass-edge{
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:inherit;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    pointer-events:none;
+
+}
+
+
+
+/*==================================================
+
+TOP GLOW
+
+==================================================*/
+
+.glass-top-glow{
+
+    position:absolute;
+
+    top:-60px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:180px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.12);
+
+    filter:blur(50px);
+
+}
+
+
+
+/*==================================================
+
+GLASS FLOAT
+
+==================================================*/
+
+.glass-float{
+
+    animation:
+
+        FloatingCard 10s ease-in-out infinite;
+
+}
+
+
+
+/*==================================================
+
+KEYFRAMES
+
+==================================================*/
+
+@keyframes GlassShine{
+
+    0%{
+
+        left:-70%;
+
+    }
+
+    100%{
+
+        left:170%;
+
+    }
+
+}
+
+
+
+@keyframes BorderGlow{
+
+    0%{
+
+        filter:hue-rotate(0deg);
+
+    }
+
+    100%{
+
+        filter:hue-rotate(360deg);
+
+    }
+
+}
+
+
+
+/*==================================================
+
+PERFORMANCE
+
+==================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+.glass::before,
+
+.glass-light,
+
+.glass-float,
+
+.glass-border::before{
+
+animation:none !important;
+
+}
+
+}
+
+/*==================================================
+
+ANIMATION.CSS
+
+PART 6
+
+PARTICLE SYSTEM
+
+==================================================*/
+
+
+/*==================================================
+
+PARTICLE CONTAINER
+
+==================================================*/
+
+.particle-container{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:-2;
+
+}
+
+
+
+/*==================================================
+
+DEFAULT PARTICLE
+
+==================================================*/
+
+.particle{
+
+    position:absolute;
+
+    width:4px;
+
+    height:4px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.85);
+
+    filter:blur(.5px);
+
+    animation:ParticleFloat linear infinite;
+
+}
+
+
+
+/*==================================================
+
+PARTICLE SIZE
+
+==================================================*/
+
+.particle-xs{
+
+    width:2px;
+
+    height:2px;
+
+}
+
+.particle-sm{
+
+    width:4px;
+
+    height:4px;
+
+}
+
+.particle-md{
+
+    width:6px;
+
+    height:6px;
+
+}
+
+.particle-lg{
+
+    width:10px;
+
+    height:10px;
+
+}
+
+
+
+/*==================================================
+
+PARTICLE COLOR
+
+==================================================*/
+
+.particle-blue{
+
+    background:#5BDFFF;
+
+}
+
+.particle-white{
+
+    background:#ffffff;
+
+}
+
+.particle-cyan{
+
+    background:#B6F6FF;
+
+}
+
+
+
+/*==================================================
+
+PARTICLE GLOW
+
+==================================================*/
+
+.particle-glow{
+
+    box-shadow:
+
+        0 0 10px rgba(91,223,255,.55),
+
+        0 0 22px rgba(91,223,255,.30);
+
+}
+
+
+
+/*==================================================
+
+PARTICLE BLUR
+
+==================================================*/
+
+.particle-soft{
+
+    filter:blur(2px);
+
+    opacity:.45;
+
+}
+
+.particle-sharp{
+
+    filter:blur(.3px);
+
+}
+
+
+
+/*==================================================
+
+PARTICLE SPEED
+
+==================================================*/
+
+.speed-1{
+
+    animation-duration:26s;
+
+}
+
+.speed-2{
+
+    animation-duration:20s;
+
+}
+
+.speed-3{
+
+    animation-duration:15s;
+
+}
+
+.speed-4{
+
+    animation-duration:11s;
+
+}
+
+
+
+/*==================================================
+
+PARTICLE OPACITY
+
+==================================================*/
+
+.opacity-low{
+
+    opacity:.18;
+
+}
+
+.opacity-medium{
+
+    opacity:.45;
+
+}
+
+.opacity-high{
+
+    opacity:.75;
+
+}
+
+
+
+/*==================================================
+
+TWINKLE
+
+==================================================*/
+
+.twinkle{
+
+    animation:
+
+        ParticleFloat linear infinite,
+
+        Twinkle 3.5s ease-in-out infinite;
+
+}
+
+
+
+/*==================================================
+
+WATER DUST
+
+==================================================*/
+
+.water-dust{
+
+    background:rgba(255,255,255,.28);
+
+    filter:blur(4px);
+
+}
+
+
+
+/*==================================================
+
+MAGIC PARTICLE
+
+==================================================*/
+
+.magic-particle{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #5BDFFF,
+
+        #ffffff
+
+    );
+
+}
+
+
+
+/*==================================================
+
+KEYFRAMES
+
+==================================================*/
+
+@keyframes ParticleFloat{
+
+    0%{
+
+        transform:
+
+        translateY(110vh)
+
+        translateX(0px)
+
+        scale(.6);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:.5;
+
+    }
+
+    50%{
+
+        transform:
+
+        translateY(40vh)
+
+        translateX(20px)
+
+        scale(1);
+
+    }
+
+    80%{
+
+        opacity:.7;
+
+    }
+
+    100%{
+
+        transform:
+
+        translateY(-120vh)
+
+        translateX(-18px)
+
+        scale(1.3);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+@keyframes Twinkle{
+
+    0%{
+
+        opacity:.25;
+
+        transform:scale(.8);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:scale(1.35);
+
+    }
+
+    100%{
+
+        opacity:.25;
+
+        transform:scale(.8);
+
+    }
+
+}
+
+
+
+/*==================================================
+
+LIGHT DUST
+
+==================================================*/
+
+.light-dust{
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.06);
+
+    filter:blur(90px);
+
+    animation:
+
+        GlowMove 14s ease-in-out infinite;
+
+}
+
+
+
+/*==================================================
+
+PARTICLE CLUSTER
+
+==================================================*/
+
+.particle-cluster{
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        rgba(91,223,255,.08),
+
+        transparent 70%
+
+    );
+
+    filter:blur(35px);
+
+    animation:
+
+        SoftZoom 10s ease-in-out infinite;
+
+}
+
+
+
+/*==================================================
+
+SHIMMER PARTICLE
+
+==================================================*/
+
+.shimmer-particle{
+
+    animation:
+
+        ParticleFloat linear infinite,
+
+        Shimmer 8s linear infinite;
+
+}
+
+
+
+/*==================================================
+
+REDUCED MOTION
+
+==================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+.particle,
+
+.twinkle,
+
+.light-dust,
+
+.particle-cluster{
+
+animation:none !important;
+
+}
+
+}
+
+/*==================================================
+
+ANIMATION.CSS
+
+PART 7
+
+SCROLL REVEAL
+
+==================================================*/
+
+
+/*==================================================
+
+DEFAULT REVEAL
+
+==================================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s cubic-bezier(.22,.61,.36,1);
+
+    will-change:opacity,transform;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/*==================================================
+
+FADE LEFT
+
+==================================================*/
+
+.reveal-left{
+
+    opacity:0;
+
+    transform:translateX(-80px);
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s cubic-bezier(.22,.61,.36,1);
+
+}
+
+.reveal-left.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+/*==================================================
+
+FADE RIGHT
+
+==================================================*/
+
+.reveal-right{
+
+    opacity:0;
+
+    transform:translateX(80px);
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s cubic-bezier(.22,.61,.36,1);
+
+}
+
+.reveal-right.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+/*==================================================
+
+SCALE
+
+==================================================*/
+
+.reveal-scale{
+
+    opacity:0;
+
+    transform:scale(.88);
+
+    transition:
+
+        opacity .8s ease,
+
+        transform .8s ease;
+
+}
+
+.reveal-scale.active{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+
+/*==================================================
+
+ROTATE
+
+==================================================*/
+
+.reveal-rotate{
+
+    opacity:0;
+
+    transform:
+
+        rotate(-6deg)
+
+        translateY(60px);
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s ease;
+
+}
+
+.reveal-rotate.active{
+
+    opacity:1;
+
+    transform:
+
+        rotate(0deg)
+
+        translateY(0);
+
+}
+
+
+/*==================================================
+
+ZOOM
+
+==================================================*/
+
+.reveal-zoom{
+
+    opacity:0;
+
+    transform:scale(.75);
+
+    filter:blur(6px);
+
+    transition:
+
+        all 1s ease;
+
+}
+
+.reveal-zoom.active{
+
+    opacity:1;
+
+    transform:scale(1);
+
+    filter:blur(0);
+
+}
+
+
+/*==================================================
+
+CARD HOVER
+
+==================================================*/
+
+.reveal-card{
+
+    transition:
+
+        transform .35s ease,
+
+        box-shadow .35s ease;
+
+}
+
+.reveal-card:hover{
+
+    transform:
+
+        translateY(-10px)
+
+        scale(1.02);
+
+}
+
+
+/*==================================================
+
+STAGGER DELAY
+
+==================================================*/
+
+.delay-1{
+
+    transition-delay:.1s;
+
+}
+
+.delay-2{
+
+    transition-delay:.2s;
+
+}
+
+.delay-3{
+
+    transition-delay:.3s;
+
+}
+
+.delay-4{
+
+    transition-delay:.4s;
+
+}
+
+.delay-5{
+
+    transition-delay:.5s;
+
+}
+
+.delay-6{
+
+    transition-delay:.6s;
+
+}
+
+
+/*==================================================
+
+FLOAT REVEAL
+
+==================================================*/
+
+.reveal-float.active{
+
+    animation:
+
+        FloatingCard 8s ease-in-out infinite;
+
+}
+
+
+/*==================================================
+
+TEXT SHINE
+
+==================================================*/
+
+.reveal-title{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.reveal-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:120%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.25),
+
+        transparent
+
+    );
+
+    animation:Shimmer 5s linear infinite;
+
+}
+
+
+/*==================================================
+
+IMAGE HOVER
+
+==================================================*/
+
+.reveal-image{
+
+    transition:
+
+        transform .45s ease,
+
+        filter .45s ease;
+
+}
+
+.reveal-image:hover{
+
+    transform:scale(1.04);
+
+    filter:brightness(1.08);
+
+}
+
+
+/*==================================================
+
+SECTION DIVIDER
+
+==================================================*/
+
+.section-divider{
+
+    animation:
+
+        WaterWave 10s ease-in-out infinite;
+
+}
+
+
+/*==================================================
+
+PERFORMANCE
+
+==================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+.reveal,
+
+.reveal-left,
+
+.reveal-right,
+
+.reveal-scale,
+
+.reveal-zoom,
+
+.reveal-rotate{
+
+    transition:none !important;
+
+    transform:none !important;
+
+    opacity:1 !important;
+
+}
+
+}
+
+/*==================================================
+
+ANIMATION.CSS
+
+PART 8
+
+BUTTON ANIMATION
+
+==================================================*/
+
+
+/*==================================================
+
+BUTTON BASE
+
+==================================================*/
+
+.btn,
+.hero-btn,
+.hero-btn-secondary,
+.stButton>button{
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:
+
+        transform .35s ease,
+
+        box-shadow .35s ease,
+
+        background .35s ease;
+
+}
+
+
+
+/*==================================================
+
+BUTTON HOVER
+
+==================================================*/
+
+.btn:hover,
+.hero-btn:hover,
+.hero-btn-secondary:hover,
+.stButton>button:hover{
+
+    transform:
+
+        translateY(-5px)
+
+        scale(1.02);
+
+}
+
+
+
+/*==================================================
+
+BUTTON ACTIVE
+
+==================================================*/
+
+.btn:active,
+.hero-btn:active,
+.hero-btn-secondary:active,
+.stButton>button:active{
+
+    transform:
+
+        scale(.96);
+
+}
+
+
+
+/*==================================================
+
+BUTTON SHINE
+
+==================================================*/
+
+.btn::before,
+.hero-btn::before,
+.hero-btn-secondary::before,
+.stButton>button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-140%;
+
+    width:80%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.45),
+
+        transparent
+
+    );
+
+    transform:skewX(-25deg);
+
+    animation:ButtonShine 5s linear infinite;
+
+}
+
+
+
+/*==================================================
+
+BUTTON GLOW
+
+==================================================*/
+
+.btn:hover,
+.hero-btn:hover,
+.hero-btn-secondary:hover,
+.stButton>button:hover{
+
+    box-shadow:
+
+        0 12px 35px rgba(91,223,255,.35),
+
+        0 0 35px rgba(91,223,255,.25);
+
+}
+
+
+
+/*==================================================
+
+BUTTON RIPPLE
+
+==================================================*/
+
+.btn::after,
+.hero-btn::after,
+.hero-btn-secondary::after,
+.stButton>button::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:18px;
+
+    height:18px;
+
+    background:rgba(255,255,255,.35);
+
+    border-radius:50%;
+
+    top:50%;
+
+    left:50%;
+
+    transform:
+
+        translate(-50%,-50%)
+
+        scale(0);
+
+    opacity:0;
+
+}
+
+
+
+.btn:active::after,
+.hero-btn:active::after,
+.hero-btn-secondary:active::after,
+.stButton>button:active::after{
+
+    animation:ButtonRipple .55s ease-out;
+
+}
+
+
+
+/*==================================================
+
+BUTTON ICON
+
+==================================================*/
+
+.btn i,
+.hero-btn i,
+.hero-btn-secondary i{
+
+    transition:
+
+        transform .3s ease;
+
+}
+
+
+
+.btn:hover i,
+.hero-btn:hover i,
+.hero-btn-secondary:hover i{
+
+    transform:
+
+        translateX(6px);
+
+}
+
+
+
+/*==================================================
+
+BUTTON BORDER
+
+==================================================*/
+
+.btn-outline{
+
+    position:relative;
+
+}
+
+
+
+.btn-outline::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-1px;
+
+    border-radius:inherit;
+
+    padding:1px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(91,223,255,.70),
+
+        rgba(255,255,255,.15),
+
+        rgba(91,223,255,.70)
+
+    );
+
+    -webkit-mask:
+
+        linear-gradient(#fff 0 0) content-box,
+
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+}
+
+
+
+/*==================================================
+
+PULSE BUTTON
+
+==================================================*/
+
+.btn-pulse{
+
+    animation:
+
+        Pulse 3.5s ease infinite;
+
+}
+
+
+
+/*==================================================
+
+FLOAT BUTTON
+
+==================================================*/
+
+.btn-float{
+
+    animation:
+
+        FloatingCard 7s ease-in-out infinite;
+
+}
+
+
+
+/*==================================================
+
+KEYFRAMES
+
+==================================================*/
+
+@keyframes ButtonRipple{
+
+    0%{
+
+        transform:
+
+            translate(-50%,-50%)
+
+            scale(0);
+
+        opacity:.8;
+
+    }
+
+    100%{
+
+        transform:
+
+            translate(-50%,-50%)
+
+            scale(15);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+@keyframes ButtonShine{
+
+    0%{
+
+        left:-140%;
+
+    }
+
+    100%{
+
+        left:180%;
+
+    }
+
+}
+
+
+
+/*==================================================
+
+DISABLED BUTTON
+
+==================================================*/
+
+.btn:disabled,
+.stButton>button:disabled{
+
+    cursor:not-allowed;
+
+    opacity:.55;
+
+    box-shadow:none;
+
+}
+
+
+
+/*==================================================
+
+REDUCED MOTION
+
+==================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+.btn,
+.hero-btn,
+.hero-btn-secondary,
+.stButton>button{
+
+    animation:none !important;
+
+    transition:none !important;
+
+}
+
+.btn::before,
+.btn::after,
+.hero-btn::before,
+.hero-btn::after,
+.hero-btn-secondary::before,
+.hero-btn-secondary::after{
+
+    animation:none !important;
+
+}
+
+}
+
+/*==================================================
+
+ANIMATION.CSS
+
+PART 9
+
+BACKGROUND ANIMATION
+
+==================================================*/
+
+
+/*==================================================
+
+BACKGROUND WRAPPER
+
+==================================================*/
+
+.background-layer{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:-100;
+
+}
+
+
+
+/*==================================================
+
+LAYER 1
+
+OCEAN GRADIENT
+
+==================================================*/
+
+.bg-gradient{
+
+    position:absolute;
+
+    inset:-30%;
+
+    background:linear-gradient(
+
+        135deg,
+
+        #021428,
+
+        #083D77,
+
+        #2399FF,
+
+        #7FE7FF,
+
+        #E5FCFF
+
+    );
+
+    background-size:600% 600%;
+
+    animation:
+
+        GradientShift 28s ease infinite;
+
+}
+
+
+
+/*==================================================
+
+LAYER 2
+
+AURORA
+
+==================================================*/
+
+.bg-aurora{
+
+    position:absolute;
+
+    width:1800px;
+
+    height:1800px;
+
+    top:-700px;
+
+    left:-300px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+
+        circle,
+
+        rgba(91,223,255,.18),
+
+        rgba(91,223,255,.05),
+
+        transparent 72%
+
+    );
+
+    filter:blur(140px);
+
+    animation:
+
+        AuroraMove 35s ease-in-out infinite;
+
+}
+
+
+
+/*==================================================
+
+LAYER 3
+
+SECOND AURORA
+
+==================================================*/
+
+.bg-aurora-two{
+
+    position:absolute;
+
+    width:1400px;
+
+    height:1400px;
+
+    right:-450px;
+
+    bottom:-450px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+
+        circle,
+
+        rgba(255,255,255,.10),
+
+        rgba(91,223,255,.04),
+
+        transparent 70%
+
+    );
+
+    filter:blur(120px);
+
+    animation:
+
+        AuroraMoveReverse 42s ease-in-out infinite;
+
+}
+
+
+
+/*==================================================
+
+LAYER 4
+
+FLOATING LIGHT
+
+==================================================*/
+
+.bg-light{
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    filter:blur(120px);
+
+    animation:
+
+        GlowMove 18s ease-in-out infinite;
+
+}
+
+
+
+/*==================================================
+
+LIGHT POSITION
+
+==================================================*/
+
+.bg-light.one{
+
+    left:8%;
+
+    top:12%;
+
+}
+
+
+
+.bg-light.two{
+
+    right:10%;
+
+    bottom:8%;
+
+    animation-delay:6s;
+
+}
+
+
+
+.bg-light.three{
+
+    left:50%;
+
+    top:55%;
+
+    animation-delay:10s;
+
+}
+
+
+
+/*==================================================
+
+MOVING CIRCLE
+
+==================================================*/
+
+.bg-circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(91,223,255,.12),
+
+            transparent
+
+        );
+
+    filter:blur(60px);
+
+    animation:
+
+        CircleFloat 22s ease-in-out infinite;
+
+}
+
+
+
+/*==================================================
+
+TOP FOG
+
+==================================================*/
+
+.bg-fog{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        180deg,
+
+        rgba(255,255,255,.05),
+
+        transparent 25%,
+
+        transparent 70%,
+
+        rgba(0,0,0,.08)
+
+    );
+
+}
+
+
+
+/*==================================================
+
+VIGNETTE
+
+==================================================*/
+
+.bg-vignette{
+
+    position:absolute;
+
+    inset:0;
+
+    background:radial-gradient(
+
+        circle,
+
+        transparent 40%,
+
+        rgba(0,0,0,.22)
+
+    );
+
+}
+
+
+
+/*==================================================
+
+NOISE
+
+==================================================*/
+
+.bg-noise{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:.035;
+
+    mix-blend-mode:soft-light;
+
+    background-image:
+
+        radial-gradient(circle,#fff 1px,transparent 1px);
+
+    background-size:4px 4px;
+
+}
+
+
+
+/*==================================================
+
+KEYFRAMES
+
+==================================================*/
+
+@keyframes AuroraMove{
+
+    0%{
+
+        transform:
+
+            translate(0,0)
+
+            scale(1);
+
+    }
+
+    50%{
+
+        transform:
+
+            translate(120px,-80px)
+
+            scale(1.12);
+
+    }
+
+    100%{
+
+        transform:
+
+            translate(0,0)
+
+            scale(1);
+
+    }
+
+}
+
+
+
+@keyframes AuroraMoveReverse{
+
+    0%{
+
+        transform:
+
+            translate(0,0)
+
+            scale(1);
+
+    }
+
+    50%{
+
+        transform:
+
+            translate(-120px,90px)
+
+            scale(.92);
+
+    }
+
+    100%{
+
+        transform:
+
+            translate(0,0)
+
+            scale(1);
+
+    }
+
+}
+
+
+
+@keyframes CircleFloat{
+
+    0%{
+
+        transform:
+
+            translateY(0)
+
+            translateX(0);
+
+    }
+
+    25%{
+
+        transform:
+
+            translateY(-45px)
+
+            translateX(20px);
+
+    }
+
+    50%{
+
+        transform:
+
+            translateY(-80px)
+
+            translateX(-15px);
+
+    }
+
+    75%{
+
+        transform:
+
+            translateY(-40px)
+
+            translateX(25px);
+
+    }
+
+    100%{
+
+        transform:
+
+            translateY(0)
+
+            translateX(0);
+
+    }
+
+}
+
+
+
+/*==================================================
+
+BACKGROUND PARALLAX READY
+
+==================================================*/
+
+.bg-gradient,
+
+.bg-aurora,
+
+.bg-aurora-two,
+
+.bg-light,
+
+.bg-circle{
+
+    will-change:
+
+        transform,
+
+        opacity;
+
+}
+
+
+
+/*==================================================
+
+REDUCED MOTION
+
+==================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+.bg-gradient,
+
+.bg-aurora,
+
+.bg-aurora-two,
+
+.bg-light,
+
+.bg-circle{
+
+    animation:none !important;
+
+}
+
+}
+
+/*==================================================
+
+ANIMATION.CSS
+
+PART 10
+
+PERFORMANCE OPTIMIZATION
+
+==================================================*/
+
+
+/*==================================================
+
+GPU ACCELERATION
+
+==================================================*/
+
+.hero,
+.hero-image,
+.hero-card,
+.glass,
+.bubble,
+.particle,
+.hero-btn,
+.hero-btn-secondary,
+.bg-gradient,
+.bg-aurora,
+.bg-aurora-two,
+.bg-light,
+.bg-circle{
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+    will-change:transform,opacity;
+
+}
+
+
+
+/*==================================================
+
+OPTIMIZE PAINT
+
+==================================================*/
+
+.hero,
+.hero-left,
+.hero-right,
+.glass,
+.background-layer,
+.bubble-container,
+.particle-container{
+
+    contain:layout paint style;
+
+}
+
+
+
+/*==================================================
+
+IMAGE OPTIMIZATION
+
+==================================================*/
+
+img{
+
+    image-rendering:auto;
+
+    max-width:100%;
+
+    height:auto;
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+
+
+/*==================================================
+
+SCROLL OPTIMIZATION
+
+==================================================*/
+
+html{
+
+    scroll-behavior:smooth;
+
+    overflow-x:hidden;
+
+}
+
+
+
+body{
+
+    overflow-x:hidden;
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+
+
+/*==================================================
+
+SELECTION
+
+==================================================*/
+
+::selection{
+
+    background:rgba(91,223,255,.28);
+
+    color:#ffffff;
+
+}
+
+
+
+/*==================================================
+
+SCROLLBAR
+
+==================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#062647;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(
+
+        180deg,
+
+        #5BDFFF,
+
+        #2399FF
+
+    );
+
+    border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#8CEEFF;
+
+}
+
+
+
+/*==================================================
+
+FOCUS ACCESSIBILITY
+
+==================================================*/
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+
+    outline:2px solid rgba(91,223,255,.8);
+
+    outline-offset:3px;
+
+}
+
+
+
+/*==================================================
+
+LARGE SCREEN
+
+==================================================*/
+
+@media(min-width:1800px){
+
+.container{
+
+    max-width:1700px;
+
+    margin:auto;
+
+}
+
+.hero-title{
+
+    font-size:4.8rem;
+
+}
+
+.hero-description{
+
+    font-size:1.35rem;
+
+}
+
+}
+
+
+
+/*==================================================
+
+TABLET
+
+==================================================*/
+
+@media(max-width:992px){
+
+.hero{
+
+    padding-top:90px;
+
+}
+
+.hero-title{
+
+    font-size:2.7rem;
+
+}
+
+.hero-description{
+
+    font-size:1rem;
+
+}
+
+}
+
+
+
+/*==================================================
+
+MOBILE
+
+==================================================*/
+
+@media(max-width:768px){
+
+.hero{
+
+    padding-top:70px;
+
+}
+
+.hero-title{
+
+    font-size:2rem;
+
+    line-height:1.2;
+
+}
+
+.hero-description{
+
+    font-size:.95rem;
+
+}
+
+.hero-image{
+
+    width:90%;
+
+    margin:auto;
+
+}
+
+.glass{
+
+    backdrop-filter:blur(12px);
+
+}
+
+.bubble:nth-child(n+20){
+
+    display:none;
+
+}
+
+.particle:nth-child(n+35){
+
+    display:none;
+
+}
+
+}
+
+
+
+/*==================================================
+
+SMALL MOBILE
+
+==================================================*/
+
+@media(max-width:480px){
+
+.hero-title{
+
+    font-size:1.7rem;
+
+}
+
+.hero-description{
+
+    font-size:.88rem;
+
+}
+
+.hero-btn,
+
+.hero-btn-secondary{
+
+    width:100%;
+
+}
+
+}
+
+
+
+/*==================================================
+
+HIGH REFRESH RATE
+
+==================================================*/
+
+@media(min-resolution:2dppx){
+
+.hero-image,
+
+.glass,
+
+.bubble,
+
+.particle{
+
+    transform:translate3d(0,0,0);
+
+}
+
+}
+
+
+
+/*==================================================
+
+REDUCED MOTION
+
+==================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+*{
+
+    animation:none !important;
+
+    transition:none !important;
+
+    scroll-behavior:auto !important;
+
+}
+
+}
+
+
+
+/*==================================================
+
+PRINT MODE
+
+==================================================*/
+
+@media print{
+
+.background-layer,
+
+.bubble-container,
+
+.particle-container,
+
+.hero-glow,
+
+.hero-circle{
+
+    display:none !important;
+
+}
+
+body{
+
+    background:#ffffff !important;
+
+    color:#000000 !important;
+
+}
+
+}
+
+
+
+/*==================================================
+
+END OF ANIMATION.CSS
+
+==================================================*/
+
+/*==================================================
+
+ANIMATION.CSS
+
+PART 11
+
+SPLASH SCREEN
+
+==================================================*/
+
+
+/*============================
+
+LOADER
+
+=============================*/
+
+.splash-screen{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+    background:linear-gradient(
+
+        180deg,
+
+        #02172E,
+
+        #0A4E97,
+
+        #8EEBFF
+
+    );
+
+    z-index:999999;
+
+    overflow:hidden;
+
+    transition:opacity .8s ease,
+               visibility .8s ease;
+
+}
+
+
+.splash-screen.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+
+
+/*============================
+
+LOGO
+
+=============================*/
+
+.splash-logo{
+
+    font-size:56px;
+
+    font-weight:700;
+
+    color:white;
+
+    letter-spacing:2px;
+
+    animation:
+
+        LogoPop 1.2s ease,
+
+        FloatingCard 5s ease-in-out infinite;
+
+}
+
+
+
+/*============================
+
+LOADING
+
+=============================*/
+
+.loading-text{
+
+    margin-top:25px;
+
+    color:white;
+
+    opacity:.85;
+
+    letter-spacing:5px;
+
+    animation:
+
+        Pulse 2s infinite;
+
+}
+
+
+
+/*============================
+
+PROGRESS
+
+=============================*/
+
+.loading-bar{
+
+    width:280px;
+
+    height:8px;
+
+    margin-top:40px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.15);
+
+    overflow:hidden;
+
+}
+
+
+.loading-fill{
+
+    height:100%;
+
+    width:0;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        #5BDFFF,
+
+        #FFFFFF
+
+    );
+
+    animation:
+
+        LoadingFill 3s linear forwards;
+
+}
+
+
+
+/*============================
+
+KEYFRAME
+
+=============================*/
+
+@keyframes LogoPop{
+
+0%{
+
+transform:scale(.5);
+
+opacity:0;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+
+
+@keyframes LoadingFill{
+
+0%{
+
+width:0;
+
+}
+
+100%{
+
+width:100%;
+
+}
+}
+
+/*==================================================
+
+ANIMATION.CSS
+
+PART 12
+
+PREMIUM MICRO INTERACTION
+
+==================================================*/
+
+
+.hover-lift{
+
+transition:.35s ease;
+
+}
+
+.hover-lift:hover{
+
+transform:
+
+translateY(-8px)
+
+scale(1.02);
+
+}
+
+
+
+.hover-rotate:hover{
+
+transform:rotate(3deg);
+
+}
+
+
+
+.hover-glow:hover{
+
+box-shadow:
+
+0 0 35px rgba(91,223,255,.35);
+
+}
+
+
+
+.hover-scale:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+.icon-hover{
+
+transition:.3s;
+
+}
+
+
+
+.icon-hover:hover{
+
+transform:
+
+translateY(-4px)
+
+rotate(10deg);
+
+}
+
+
+
+.card-hover{
+
+transition:
+
+transform .35s,
+
+box-shadow .35s;
+
+}
+
+
+
+.card-hover:hover{
+
+transform:
+
+translateY(-12px);
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,.25),
+
+0 0 35px rgba(91,223,255,.20);
+
+}
+
+
+
+.image-hover{
+
+overflow:hidden;
+
+}
+
+
+
+.image-hover img{
+
+transition:
+
+transform .5s ease;
+
+}
+
+
+
+.image-hover:hover img{
+
+transform:scale(1.08);
+
+}
+
+
+
+.badge-hover{
+
+transition:.35s;
+
+}
+
+
+
+.badge-hover:hover{
+
+background:#5BDFFF;
+
+color:white;
+
+}
+
+
+
+.link-hover{
+
+position:relative;
+
+text-decoration:none;
+
+}
+
+
+
+.link-hover::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-2px;
+
+width:0;
+
+height:2px;
+
+background:#5BDFFF;
+
+transition:.35s;
+
+}
+
+
+
+.link-hover:hover::after{
+
+width:100%;
+
+}
+
+
+
+.glow-hover{
+
+position:relative;
+
+}
+
+
+
+.glow-hover::before{
+
+content:"";
+
+position:absolute;
+
+inset:-2px;
+
+border-radius:inherit;
+
+background:linear-gradient(
+
+135deg,
+
+rgba(91,223,255,.4),
+
+transparent
+
+);
+
+filter:blur(12px);
+
+opacity:0;
+
+transition:.35s;
+
+z-index:-1;
+
+}
+
+
+
+.glow-hover:hover::before{
+
+opacity:1;
+
+}
+
+
+
+.click-scale:active{
+
+transform:scale(.95);
+
+}
+
+
+
+.smooth{
+
+transition:all .35s ease;
+
+}
+
